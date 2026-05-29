@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Your first practical steps on Solana – wallet, explore, compare validators, optional staking." />
+  <title>First steps – Open Solana Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="./index.html" class="brand" style="text-decoration:none">
+        <span class="brand-title">Open Solana Guide</span>
+        <span class="brand-tag">Learn before you stake</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="./index.html">Home</a>
+        <a href="./basics.html">Basics</a>
+        <a href="./stay-safe.html">Stay safe</a>
+        <a href="./first-steps.html" class="active">First steps</a>
+        <a href="./ecosystem.html">Ecosystem</a>
+        <a href="./about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="theme-btn" aria-label="Toggle theme">☀</button>
+        <a class="btn btn-primary" href="https://validator-transparency-dashboard.vercel.app/?from=learn" target="_blank" rel="noopener">Compare validators</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <h1>First practical steps</h1>
+    <p>A simple path from “I read about Solana” to “I can explore on my own.” Staking is the last step – optional.</p>
+
+    <ol class="step-list">
+      <li>
+        <strong style="color:var(--heading)">Install a wallet</strong><br />
+        Pick a reputable wallet (Phantom, Solflare, or Backpack). Download only from official sites or app stores.
+        Write your seed phrase on paper; store it offline.
+      </li>
+      <li>
+        <strong style="color:var(--heading)">Fund with a small amount</strong><br />
+        Buy or transfer a tiny amount of SOL first – enough to learn fees and sends. Treat it as tuition, not an investment thesis.
+      </li>
+      <li>
+        <strong style="color:var(--heading)">Send yourself a test transaction</strong><br />
+        Move a little SOL between your own addresses or to a second wallet you control. Confirm it on an explorer. You are learning the rhythm of approve → confirm → wait.
+      </li>
+      <li>
+        <strong style="color:var(--heading)">Compare validators before you stake</strong><br />
+        Staking means delegating to a validator who votes on the network. Commission, uptime, and history matter.
+        Open the <a href="https://validator-transparency-dashboard.vercel.app/index.html?from=learn#directory-section" target="_blank" rel="noopener">Validator Transparency Dashboard</a>,
+        search by name or vote key, and read Stability, Commission, and the network-relative summary.
+        Try comparing two validators side by side.
+      </li>
+      <li>
+        <strong style="color:var(--heading)">Stake only when you are ready</strong><br />
+        In your wallet, search for a validator by name or paste a vote account key.
+        Your SOL stays in your wallet; you can undelegate later (with a cooldown period).
+        This guide does not recommend a specific validator – explore, compare, then decide.
+      </li>
+    </ol>
+
+    <div class="callout">
+      <strong>Try the tool now</strong><br />
+      <span style="color:var(--text2);font-size:14px">
+        Open the dashboard with an example profile, then pick any validator from the directory:
+      </span>
+      <div class="path-row" style="margin-top:12px">
+        <a class="btn btn-primary" href="https://validator-transparency-dashboard.vercel.app/?vote=3QPGLackJy5LKctYYoPGmA4P8ncyE197jdxr1zP2ho8K&from=learn" target="_blank" rel="noopener">Open example validator</a>
+        <a class="btn btn-ghost" href="https://validator-transparency-dashboard.vercel.app/index.html#directory-section" target="_blank" rel="noopener">Browse directory</a>
+      </div>
+    </div>
+
+    <h2>What to look for on the dashboard</h2>
+    <ul>
+      <li><strong style="color:var(--heading)">Commission</strong> – validator fee on rewards; lower is usually better for you (pool fees may still apply).</li>
+      <li><strong style="color:var(--heading)">Stability score</strong> – long-term consistency from stored snapshots.</li>
+      <li><strong style="color:var(--heading)">Live status</strong> – healthy vs delinquent right now.</li>
+      <li><strong style="color:var(--heading)">Pool stake split</strong> – who delegates through known pools (Trillium data).</li>
+    </ul>
+
+    <div class="path-row">
+      <a class="btn btn-primary" href="./ecosystem.html">Next: ecosystem overview</a>
+      <a class="btn btn-ghost" href="./stay-safe.html">Back to stay safe</a>
+    </div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <div class="footer-links">
+      <a href="https://validator-transparency-dashboard.vercel.app/?from=learn" target="_blank" rel="noopener">Validator Transparency Dashboard</a>
+      <a href="https://andrewinua.com/" target="_blank" rel="noopener">AndrewInUA validator</a>
+    </div>
+    <p>Education only – not financial advice.</p>
+  </footer>
+</body>
+</html>
