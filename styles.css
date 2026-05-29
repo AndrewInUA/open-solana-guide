@@ -8,10 +8,11 @@
   --text2: #9aa3b8;
   --text3: #6b7488;
   --heading: #f0f3fa;
-  --accent: #c9ff15;
-  --accent-fg: #060314;
-  --mint: #14f195;
-  --success: #b8f000;
+  --link: #8eb4d4;
+  --link-hover: #a8c8e6;
+  --accent-soft: #5a7f9e;
+  --accent: #4a7394;
+  --accent-fg: #f5f8fc;
   --warn: #f36b6b;
   --font: "Inter", system-ui, sans-serif;
   --radius: 16px;
@@ -31,6 +32,9 @@ html[data-theme="light"] {
   --text2: #5a6270;
   --text3: #8b93a6;
   --heading: #060314;
+  --link: #3d5f85;
+  --link-hover: #2a4560;
+  --accent-soft: #9aafc4;
   --accent: #060314;
   --accent-fg: #ffffff;
   color-scheme: light;
@@ -47,8 +51,8 @@ body {
   font-size: 16px;
 }
 
-a { color: var(--mint); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
 
 .wrap {
   max-width: var(--wide);
@@ -114,7 +118,7 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
-.site-nav a.active { color: var(--mint); }
+.site-nav a.active { color: var(--link); }
 
 .header-actions {
   display: flex;
@@ -184,7 +188,7 @@ a:hover { text-decoration: underline; }
 .hero-note {
   font-size: 14px;
   color: var(--text3);
-  border-left: 3px solid var(--mint);
+  border-left: 3px solid var(--accent-soft);
   padding-left: 14px;
   margin: 24px 0 0;
 }
@@ -218,7 +222,7 @@ a:hover { text-decoration: underline; }
 .card-link {
   font-size: 13px;
   font-weight: 600;
-  color: var(--mint);
+  color: var(--link);
 }
 
 .prose {
@@ -259,7 +263,7 @@ a:hover { text-decoration: underline; }
 .prose blockquote {
   margin: 20px 0;
   padding: 14px 18px;
-  border-left: 3px solid var(--success);
+  border-left: 3px solid var(--accent-soft);
   background: var(--surface2);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   color: var(--text2);
