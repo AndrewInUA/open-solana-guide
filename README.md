@@ -26,7 +26,6 @@ npx serve .
 
 - [Validator Transparency Dashboard](https://validator-transparency-dashboard.vercel.app/) – compare validators
 - [AndrewInUA validator](https://andrewinua.com/)
-- [Solyanka (Ukrainian)](https://solyanka.super.site/)
 
 ## Author
 
