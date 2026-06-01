@@ -93,10 +93,34 @@ a:hover { color: var(--link-hover); }
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
+}
+
+.brand-logo-link,
+.brand-text-link {
   text-decoration: none !important;
 }
 
-.brand:hover { text-decoration: none !important; }
+.brand-logo-link {
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 50%;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.brand-logo-link:hover {
+  text-decoration: none !important;
+  opacity: 0.88;
+  transform: scale(1.03);
+}
+
+.brand-text-link:hover {
+  text-decoration: none !important;
+}
+
+.brand-text-link:hover .brand-title {
+  color: var(--link-hover);
+}
 
 .brand-logo {
   width: 42px;
