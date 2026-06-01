@@ -109,31 +109,15 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 
 .brand:hover { text-decoration: none !important; }
 
-.brand-logos {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
 .brand-logo {
   display: block;
-  object-fit: contain;
-}
-
-.brand-logo-owner {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--surface2);
-  padding: 4px;
-}
-
-.brand-logo-solana {
-  width: 32px;
-  height: auto;
-  opacity: 0.95;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .brand-text {
@@ -551,12 +535,11 @@ html[data-theme="light"] .btn-primary {
 }
 
 .footer-brand img {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  padding: 3px;
-  background: var(--surface);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  object-fit: cover;
 }
 
 .footer-brand strong {
@@ -596,6 +579,3 @@ html[data-theme="light"] .btn-primary {
   .header-actions { margin-left: auto; }
 }
 
-@media (max-width: 480px) {
-  .brand-logo-solana { display: none; }
-}
