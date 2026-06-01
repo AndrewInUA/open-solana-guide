@@ -9,14 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/logo-transparent.png" type="image/png" />
   <script src="./site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="./index.html" class="brand" style="text-decoration:none">
-        <span class="brand-title">Open Solana Guide</span>
-        <span class="brand-tag">Learn before you stake</span>
+      <a href="./index.html" class="brand">
+        <span class="brand-logos" aria-hidden="true">
+          <img src="./assets/logo-transparent.png" alt="" class="brand-logo brand-logo-owner" width="40" height="40" />
+          <img src="./assets/solana-mark.svg" alt="" class="brand-logo brand-logo-solana" width="32" height="28" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Open Solana Guide</span>
+          <span class="brand-tag">Learn before you stake</span>
+        </span>
       </a>
       <nav class="site-nav" aria-label="Main">
         <a href="./index.html">Home</a>
@@ -33,9 +40,10 @@
     </div>
   </header>
 
-  <main class="wrap prose">
+  <main class="wrap">
+    <article class="prose-panel prose">
     <h1>First practical steps</h1>
-    <p>A simple path from “I read about Solana” to “I can explore on my own.” Staking is the last step – optional.</p>
+    <p class="prose-lead">A simple path from “I read about Solana” to “I can explore on my own.” Staking is the last step – optional.</p>
 
     <ol class="step-list">
       <li>
@@ -89,14 +97,22 @@
       <a class="btn btn-primary" href="./ecosystem.html">Next: ecosystem overview</a>
       <a class="btn btn-ghost" href="./stay-safe.html">Back to stay safe</a>
     </div>
+    </article>
   </main>
 
   <footer class="wrap site-footer">
+    <div class="footer-brand">
+      <img src="./assets/logo-transparent.png" alt="" width="36" height="36" />
+      <div>
+        <strong>Open Solana Guide</strong>
+        <span>Built by AndrewInUA</span>
+      </div>
+    </div>
     <div class="footer-links">
       <a href="https://validator-transparency-dashboard.vercel.app/?from=learn" target="_blank" rel="noopener">Validator Transparency Dashboard</a>
       <a href="https://andrewinua.com/" target="_blank" rel="noopener">AndrewInUA validator</a>
     </div>
-    <p>Education only – not financial advice.</p>
+    <p class="footer-note">Education only – not financial advice.</p>
   </footer>
 </body>
 </html>

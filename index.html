@@ -10,14 +10,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/logo-transparent.png" type="image/png" />
   <script src="./site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="./index.html" class="brand" style="text-decoration:none">
-        <span class="brand-title">Open Solana Guide</span>
-        <span class="brand-tag">Learn before you stake</span>
+      <a href="./index.html" class="brand">
+        <span class="brand-logos" aria-hidden="true">
+          <img src="./assets/logo-transparent.png" alt="" class="brand-logo brand-logo-owner" width="40" height="40" />
+          <img src="./assets/solana-mark.svg" alt="" class="brand-logo brand-logo-solana" width="32" height="28" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Open Solana Guide</span>
+          <span class="brand-tag">Learn before you stake</span>
+        </span>
       </a>
       <nav class="site-nav" aria-label="Main">
         <a href="./index.html" class="active">Home</a>
@@ -35,7 +42,11 @@
   </header>
 
   <main class="wrap">
-    <section class="hero">
+    <section class="hero-panel hero">
+      <p class="hero-badge">
+        <img src="./assets/solana-mark.svg" alt="" width="18" height="16" />
+        Open education · no hype
+      </p>
       <h1>Solana, explained simply</h1>
       <p class="hero-lead">
         A calm introduction to Solana, blockchain, and Web3 – without hype, without pressure to invest,
@@ -50,37 +61,38 @@
       </p>
     </section>
 
-    <section>
-      <h2 style="font-size:18px;color:var(--heading);margin:0 0 14px">What is Solana?</h2>
-      <p style="color:var(--text2);max-width:36em;margin:0 0 16px;font-size:15px">
+    <section class="section-intro">
+      <h2>What is Solana?</h2>
+      <p>
         Solana is public infrastructure for moving, holding, and using digital value – peer to peer,
         without a bank in the middle. Think of it as a shared ledger anyone can read, with rules enforced by code.
-      </p>
-      <p style="color:var(--text2);max-width:36em;margin:0;font-size:15px">
-        That opens a new layer of the internet where <strong style="color:var(--heading)">you can own digital things directly</strong> –
+        That opens a layer of the internet where <strong>you can own digital things directly</strong> –
         money, art, tickets, identity – instead of renting access from a company.
       </p>
     </section>
 
     <div class="card-grid">
       <article class="card">
+        <div class="card-icon" aria-hidden="true">📖</div>
         <h3>Why learn this?</h3>
         <p>Not to chase trends – to understand money without banks, direct support for causes, digital creativity, and where identity may go next.</p>
         <a class="card-link" href="./basics.html">Read basics →</a>
       </article>
       <article class="card">
+        <div class="card-icon" aria-hidden="true">🤝</div>
         <h3>Not a technical person?</h3>
         <p>That is fine. This guide is written for curious humans who value clarity and transparency over jargon.</p>
         <a class="card-link" href="./about.html">Who made this →</a>
       </article>
       <article class="card">
+        <div class="card-icon" aria-hidden="true">🔍</div>
         <h3>Ready to explore?</h3>
         <p>When you know the basics, compare real validators with open metrics – stability, commission, pools.</p>
         <a class="card-link" href="./first-steps.html">First steps →</a>
       </article>
     </div>
 
-    <blockquote style="max-width:36em;margin:32px 0;padding:14px 18px;border-left:3px solid var(--accent-soft);background:var(--surface2);border-radius:0 10px 10px 0;color:var(--text2);font-size:15px">
+    <blockquote class="quote-panel">
       Take your time. Each page builds on the last. There is no rush – and no quiz at the end.
     </blockquote>
 
@@ -96,13 +108,20 @@
   </main>
 
   <footer class="wrap site-footer">
+    <div class="footer-brand">
+      <img src="./assets/logo-transparent.png" alt="" width="36" height="36" />
+      <div>
+        <strong>Open Solana Guide</strong>
+        <span>Built by AndrewInUA</span>
+      </div>
+    </div>
     <div class="footer-links">
       <a href="https://validator-transparency-dashboard.vercel.app/?from=learn" target="_blank" rel="noopener">Validator Transparency Dashboard</a>
       <a href="https://andrewinua.com/" target="_blank" rel="noopener">AndrewInUA validator</a>
       <a href="https://github.com/AndrewInUA/open-solana-guide" target="_blank" rel="noopener">GitHub</a>
       <a href="https://t.me/AndrewInUA" target="_blank" rel="noopener">Telegram</a>
     </div>
-    <p>Open Solana Guide – education only, not financial advice. Built by <a href="https://github.com/AndrewInUA">AndrewInUA</a>.</p>
+    <p class="footer-note">Education only – not financial advice.</p>
   </footer>
 </body>
 </html>
