@@ -8,7 +8,7 @@
   <title>Open Solana Guide – Solana explained simply</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Outfit:wght@350;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="icon" href="./assets/logo.png" type="image/jpeg" />
   <script src="./site.js" defer></script>
@@ -39,7 +39,7 @@
   </header>
 
   <main class="wrap">
-    <section class="hero-panel hero">
+    <section class="hero">
       <h1>Solana, explained simply</h1>
       <p class="hero-lead">
         A calm introduction to Solana, blockchain, and Web3 – without hype, without pressure to invest,
@@ -49,12 +49,9 @@
         <a class="btn btn-primary" href="./basics.html">Start with basics</a>
         <a class="btn btn-ghost" href="./first-steps.html">First practical steps</a>
       </div>
-      <p class="hero-note">
-        We explain how the technology works so you can decide later – not push you to buy or stake today.
-      </p>
     </section>
 
-    <section class="section-intro">
+    <section class="flow-section">
       <h2>What is Solana?</h2>
       <p>
         Solana is public infrastructure for moving, holding, and using digital value – peer to peer,
@@ -64,34 +61,37 @@
       </p>
     </section>
 
-    <div class="card-grid">
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">📖</div>
-        <h3>Why learn this?</h3>
-        <p>Not to chase trends – to understand money without banks, direct support for causes, digital creativity, and where identity may go next.</p>
-        <a class="card-link" href="./basics.html">Read basics →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🤝</div>
-        <h3>Not a technical person?</h3>
-        <p>That is fine. This guide is written for curious humans who value clarity and transparency over jargon.</p>
-        <a class="card-link" href="./about.html">Who made this →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon" aria-hidden="true">🔍</div>
-        <h3>Ready to explore?</h3>
-        <p>When you know the basics, compare real validators with open metrics – stability, commission, pools.</p>
-        <a class="card-link" href="./first-steps.html">First steps →</a>
-      </article>
-    </div>
+    <ul class="topic-list">
+      <li>
+        <a href="./basics.html" class="topic-item">
+          <span class="topic-title">Why learn this?</span>
+          <span class="topic-desc">Understand money without banks, direct support for causes, digital creativity, and where identity may go next.</span>
+          <span class="topic-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="./about.html" class="topic-item">
+          <span class="topic-title">Not a technical person?</span>
+          <span class="topic-desc">This guide is for curious humans who value clarity and transparency over jargon.</span>
+          <span class="topic-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="./first-steps.html" class="topic-item">
+          <span class="topic-title">Ready to explore?</span>
+          <span class="topic-desc">Compare real validators with open metrics – stability, commission, pools.</span>
+          <span class="topic-arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+    </ul>
 
-    <blockquote class="quote-panel">
+    <blockquote class="quote-soft">
       Take your time. Each page builds on the last. There is no rush – and no quiz at the end.
     </blockquote>
 
-    <section class="callout">
-      <strong>Learning path</strong>
-      <ol style="margin:10px 0 0;padding-left:1.2em;color:var(--text2);font-size:14px">
+    <section class="path-flow">
+      <h2 class="path-flow-title">Suggested path</h2>
+      <ol class="path-steps">
         <li><a href="./basics.html">Basics</a> – blockchain, SOL, wallets</li>
         <li><a href="./stay-safe.html">Stay safe</a> – scams and seed phrases</li>
         <li><a href="./first-steps.html">First steps</a> – wallet, explore, compare validators</li>
