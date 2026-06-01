@@ -564,18 +564,50 @@ html[data-theme="light"] .btn-primary {
   margin-bottom: 1.25rem;
 }
 
-.footer-brand img {
+.footer-logo-link {
+  flex-shrink: 0;
+  line-height: 0;
+  text-decoration: none !important;
+  border-radius: 50%;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-logo-link:hover {
+  text-decoration: none !important;
+  opacity: 0.88;
+  transform: scale(1.03);
+}
+
+.footer-logo-link img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 
-.footer-brand strong {
+.footer-brand-text {
+  min-width: 0;
+}
+
+.footer-title-link {
   display: block;
+  text-decoration: none !important;
+}
+
+.footer-title-link:hover {
+  text-decoration: none !important;
+}
+
+.footer-title-link strong {
   color: var(--heading);
   font-size: 14px;
   font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-title-link:hover strong {
+  color: var(--link-hover);
 }
 
 .footer-brand span {
